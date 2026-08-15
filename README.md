@@ -7,7 +7,7 @@ técnicas de abajo.
 
 # Arquitectura Empresarial — [Universidad de la Sabana]
 
-**Equipo:** [Nombre del equipo] · Juan Pablo Luna Zuleta, Alejandro Riveros, Martin Solis]
+**Equipo:** [Nombre del equipo] · Juan Pablo Luna Zuleta, Alejandro Riveros, Martin Solis
 **Curso:** Arquitectura Empresarial — Universidad de La Sabana
 
 ---
