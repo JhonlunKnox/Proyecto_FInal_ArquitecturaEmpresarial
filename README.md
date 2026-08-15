@@ -5,7 +5,7 @@ Evite jerga (TOGAF, ArchiMate, STRIDE, etc.) en esta parte — eso queda para la
 técnicas de abajo.
 -->
 
-# Arquitectura Empresarial — [Universidad de la Sabana]
+# Arquitectura Empresarial — Universidad de la Sabana
 
 **Equipo:** [Nombre del equipo] · Juan Pablo Luna Zuleta, Alejandro Riveros, Martin Solis
 **Curso:** Arquitectura Empresarial — Universidad de La Sabana
