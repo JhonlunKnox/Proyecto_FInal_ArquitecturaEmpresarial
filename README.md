@@ -1,54 +1,65 @@
-<!--
-Esta es la puerta de entrada de su repositorio. Complétela pensando en que la primera
-persona que la abra puede ser alguien del área de negocio del cliente, no un técnico.
-Evite jerga (TOGAF, ArchiMate, STRIDE, etc.) en esta parte — eso queda para las carpetas
-técnicas de abajo.
--->
+# Arquitectura Empresarial — Universidad de La Sabana
 
-# Arquitectura Empresarial — Universidad de la Sabana
-
-**Equipo:** [Nombre del equipo] · Juan Pablo Luna Zuleta, Alejandro Riveros, Martin Solis
+**Equipo:** [Nombre del equipo] · Juan Pablo Luna Zuleta, Alejandro Riveros, Martín Ortega
 **Curso:** Arquitectura Empresarial — Universidad de La Sabana
+**Cliente:** Jefatura de Cultura de Innovación y Servicio — Dirección de Desarrollo Estratégico
 
 ---
 
 ## 📌 En una frase
 
-[Ej: "Rediseñamos cómo Fundación Salud Viva conecta su app móvil, su ERP y su plataforma de telemedicina, para que la atención a pacientes sea más rápida y los datos clínicos queden protegidos."]
+Rediseñamos cómo la Jefatura de Cultura de Innovación y Servicio mantiene actualizado su directorio de extensiones telefónicas, para que las llamadas de estudiantes, aspirantes y visitantes lleguen siempre a la persona correcta.
+
+---
 
 ## 🩺 El problema
 
-[2-4 líneas, en el lenguaje del cliente, no en el nuestro. Ej: "Hoy la información de un paciente vive en tres sistemas que no se hablan entre sí: la app, el ERP y la telemedicina. Eso genera reprocesos, retrasos en la atención y dificulta cumplir con la normativa de protección de datos clínicos."]
+Las gestoras que atienden el teléfono de la Universidad usan un directorio de extensiones para redirigir cada llamada al área competente. Ese directorio se mantiene a mano: cada mes hay que comparar cerca de 6.400 registros contra la nómina para encontrar entre 5 y 10 novedades, y luego coordinar con Tecnología en reuniones que muchas veces se cancelan.
+
+El resultado es que el directorio se actualiza cada dos o tres meses en lugar de cada mes. Cuando eso pasa, la llamada se transfiere a un área equivocada, o a una extensión donde ya no trabaja nadie y nadie contesta.
+
+---
 
 ## 💡 Lo que proponemos
 
-[3-5 líneas o viñetas, en lenguaje de negocio, sin nombrar herramientas ni marcos técnicos. Ej:
-- Integrar los tres sistemas para que la información del paciente se actualice en tiempo real en todos lados.
-- Reforzar la protección de los datos clínicos según la normativa vigente.
-- Un plan de implementación en fases, empezando por lo más urgente y de menor costo.]
+- Que el cruce entre la nómina y el directorio se haga solo, y que en lugar de revisar miles de filas la unidad reciba una lista corta con las novedades del mes ya clasificadas: quién entró, quién salió, quién cambió de cargo.
+- Que exista un canal directo con Tecnología para pedir una extensión y, sobre todo, para que Tecnología avise de vuelta cuando ya quedó lista. Hoy ese aviso de retorno no existe.
+- Que el directorio deje de ser un archivo suelto y pase a ser una fuente de información institucional, con estructura, permisos e historial de cambios.
+- Todo construido sobre las herramientas que la Universidad ya tiene licenciadas, para que la unidad pueda implementarlo y mantenerlo sin depender de nosotros ni de aprobaciones externas.
+
+---
 
 ## 🗺️ Cómo se implementa
 
-Ver el **[Resumen Ejecutivo](ResumenEjecutivo.md)** — ahí está el detalle de beneficios esperados, fases de implementación y tiempos, en un solo documento pensado para el negocio, no para el equipo técnico.
+Ver el [Resumen Ejecutivo](ResumenEjecutivo.md) — ahí está el detalle de beneficios esperados, fases de implementación y tiempos, en un solo documento pensado para el negocio, no para el equipo técnico.
+
+---
 
 ## 📂 Si quiere ver el detalle técnico completo
 
 Todo el análisis que sustenta esta propuesta está documentado carpeta por carpeta, siguiendo el método usado durante el proyecto:
 
-| Carpeta | Qué contiene |
-|---|---|
-| `00-preliminary-vision/` | Contexto del cliente y visión de la solución |
-| `01-bpmn/` | Cómo funciona hoy el proceso de negocio analizado |
-| `02-modelo-informacion/` | Qué información maneja el negocio y cómo fluye |
-| `03-arquitectura-c4/` | Los sistemas actuales y cómo están construidos |
-| `04-infraestructura/` | Dónde corre todo hoy y qué riesgos técnicos tiene |
-| `05-seguridad-stride/` | Análisis de seguridad de la información |
-| `06-normatividad/` | Cumplimiento legal y normativo |
-| `07-opportunities-solutions/` | La solución propuesta y qué brechas cierra |
-| `08-integracion-vistas/` | Cómo se conecta todo lo anterior en una sola arquitectura |
-| `09-presentacion-final/` | Presentación ejecutiva, plan de implementación y gobernanza |
+| Carpeta | Qué contiene | Estado |
+|---|---|---|
+| `00-preliminary-vision/` | Contexto del cliente y visión de la solución | ✅ Corte 1 |
+| `01-bpmn/` | Cómo funciona hoy el proceso de negocio analizado | ✅ Corte 1 |
+| `02-modelo-informacion/` | Qué información maneja el negocio y cómo fluye | ✅ Corte 1 |
+| `03-arquitectura-c4/` | Los sistemas actuales y cómo están construidos | 🔜 Corte 2 |
+| `04-infraestructura/` | Dónde corre todo hoy y qué riesgos técnicos tiene | 🔜 Corte 2 |
+| `05-seguridad-stride/` | Análisis de seguridad de la información | 🔜 Corte 2 |
+| `06-normatividad/` | Cumplimiento legal y normativo | 🔜 Corte 2 |
+| `07-opportunities-solutions/` | La solución propuesta y qué brechas cierra | 🔜 Corte 2 |
+| `08-integracion-vistas/` | Cómo se conecta todo lo anterior en una sola arquitectura | 🔜 Corte 3 |
+| `09-presentacion-final/` | Presentación ejecutiva, plan de implementación y gobernanza | 🔜 Corte 3 |
+
+---
+
+## 🔒 Nota sobre los datos
+
+Este repositorio **no contiene** el directorio de extensiones ni archivos de nómina. Ambos incluyen datos personales de colaboradores de la Universidad y su tratamiento se rige por la Ley 1581 de 2012. Los modelos y ejemplos publicados aquí usan datos ficticios o estructuras sin contenido real.
+
+---
 
 ## 👥 Contacto
-Juan Pablo Luna Zuleta
-jplz39333@gmail.com
-Github: JhonlunKnox
+
+Juan Pablo Luna Zuleta — jplz39333@gmail.com — GitHub: [JhonlunKnox](https://github.com/JhonlunKnox)
