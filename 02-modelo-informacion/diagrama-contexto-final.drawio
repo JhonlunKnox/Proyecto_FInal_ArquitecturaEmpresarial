@@ -1,0 +1,135 @@
+<mxfile host="app.diagrams.net" version="24.0.0" type="device">
+  <diagram name="Diagrama de contexto - AS-IS" id="ctx1">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="ct" value="Diagrama de Contexto — Flujos de información (AS-IS)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ct2" value="Directorio de extensiones telefónicas — Universidad de La Sabana" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="900" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="frontera" value="ÁMBITO DEL PROYECTO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#1F3864;dashed=1;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=14;spacingTop=8;fontSize=11;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+          <mxGeometry x="530" y="140" width="640" height="560" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sisDH" value="&lt;b&gt;Sistema de&#10;Desarrollo Humano&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px;color:#6B7280&quot;&gt;Fuera del alcance&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#6B7280;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="120" y="180" width="200" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="archNom" value="&lt;b&gt;Archivo de nómina&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;.xlsx · mes vencido&lt;br&gt;≈ día 15 del mes siguiente&lt;/i&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF4E0;strokeColor=#E08000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="590" y="180" width="230" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="proc" value="&lt;b&gt;CONCILIACIÓN&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:11px&quot;&gt;Comparación manual&lt;br&gt;registro por registro&lt;br&gt;≈ 6.400 filas&lt;/i&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;strokeWidth=2;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="220" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dirDB" value="&lt;b&gt;Directorio de extensiones&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;.xlsx en OneDrive personal&lt;br&gt;≈ 6.400 registros&lt;/i&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=12;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="920" y="350" width="200" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="repNov" value="&lt;b&gt;Reporte de novedades&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;NO EXISTE COMO ARTEFACTO&lt;/i&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F4F6FA;strokeColor=#9AA1AC;dashed=1;fontSize=12;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="590" y="560" width="230" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pbx" value="&lt;b&gt;Plataforma de telefonía&#10;(PBX)&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px;color:#6B7280&quot;&gt;Fuera del alcance&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#6B7280;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="180" width="200" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tec" value="&lt;b&gt;Dirección de Tecnología&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;Analista de aprovisionamiento&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#6B7280;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="380" width="200" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="gest" value="&lt;b&gt;Gestoras de servicio (×4)&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;Consulta en solo lectura&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="920" y="580" width="200" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="usr" value="&lt;b&gt;Usuario final&lt;/b&gt;&lt;br&gt;&lt;i style=&quot;font-size:10px&quot;&gt;Estudiante · aspirante&lt;br&gt;egresado · visitante&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#6B7280;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="580" width="200" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="fx1" value="1 · Exportación mensual" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#E08000;strokeWidth=2;fontSize=11;" edge="1" parent="1" source="sisDH" target="archNom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx2" value="2 · Insumo" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="archNom" target="proc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx3" value="3 · Lectura y actualización manual" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;startArrow=classic;endArrow=classic;fontSize=11;" edge="1" parent="1" source="proc" target="dirDB">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx4" value="4 · Solicitud verbal o Teams" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="proc" target="tec">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="730" y="320" />
+              <mxPoint x="1430" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fx5" value="5 · CONFIRMACIÓN INEXISTENTE" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#B85450;dashed=1;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#B85450;" edge="1" parent="1" source="tec" target="dirDB">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx6" value="6 · Aprovisiona" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#6B7280;fontSize=11;" edge="1" parent="1" source="tec" target="pbx">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx7" value="7 · SIN INTEGRACIÓN" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#B85450;dashed=1;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#B85450;" edge="1" parent="1" source="pbx" target="dirDB">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx8" value="8 · Consulta" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="dirDB" target="gest">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx9" value="9 · Transferencia de llamada" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;startArrow=classic;endArrow=classic;fontSize=11;" edge="1" parent="1" source="gest" target="usr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx10" value="artefacto ausente" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#9AA1AC;dashed=1;fontSize=11;fontColor=#6B7280;" edge="1" parent="1" source="proc" target="repNov">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="obs" value="&lt;b&gt;Observaciones sobre los flujos&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b style=&quot;color:#B85450&quot;&gt;Flujo 5 — La confirmación de retorno no existe.&lt;/b&gt; Tecnología ejecuta el aprovisionamiento y contacta al usuario, pero no informa de vuelta a la unidad. El marcador «pendiente por aprovisionar» permanece indefinidamente.&lt;br&gt;&lt;br&gt;&lt;b style=&quot;color:#B85450&quot;&gt;Flujo 7 — No hay integración entre el PBX y el directorio.&lt;/b&gt; El estado real de una extensión solo se conoce por comunicación verbal.&lt;br&gt;&lt;br&gt;&lt;b&gt;No existe artefacto intermedio de novedades.&lt;/b&gt; La detección y la decisión ocurren simultáneamente durante la revisión manual, lo que impide auditar qué se detectó y qué se decidió en cada ciclo.&lt;br&gt;&lt;br&gt;&lt;b&gt;El directorio es a la vez fuente de verdad y producto final&lt;/b&gt;, sin capa intermedia de validación." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#C9CFDC;align=left;spacingLeft=14;spacingTop=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="330" width="380" height="340" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lat" value="&lt;b&gt;Latencia estructural&lt;/b&gt;&lt;br&gt;&lt;br&gt;La nómina se entrega mes vencido y es el único insumo de novedades disponible.&lt;br&gt;&lt;br&gt;Esto impone un desfase de &lt;b&gt;hasta 45 días&lt;/b&gt; entre el evento real y su detección, que ninguna automatización puede eliminar." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF4E0;strokeColor=#E08000;align=left;spacingLeft=14;spacingTop=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="120" y="710" width="380" height="160" as="geometry" />
+        </mxCell>
+
+        <mxCell id="leg" value="&lt;b&gt;Convenciones&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+          <mxGeometry x="590" y="710" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lgA" value="Entidad externa / actor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#6B7280;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="590" y="740" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lgB" value="Almacén de datos" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="790" y="740" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lgC" value="Archivo / documento" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#FFF4E0;strokeColor=#E08000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="990" y="740" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lgD" value="Proceso" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1190" y="740" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="lgE" value="Flujo existente" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="640" y="800" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lgEl" style="html=1;strokeColor=#1F3864;endArrow=classic;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="590" y="810" as="sourcePoint" />
+            <mxPoint x="635" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lgF" value="Flujo ausente o sin integración" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=11;fontColor=#B85450;" vertex="1" parent="1">
+          <mxGeometry x="890" y="800" width="260" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lgFl" style="html=1;strokeColor=#B85450;dashed=1;strokeWidth=2;endArrow=classic;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="810" as="sourcePoint" />
+            <mxPoint x="885" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

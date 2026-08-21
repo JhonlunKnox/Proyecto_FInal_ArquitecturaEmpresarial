@@ -1,0 +1,112 @@
+<mxfile host="app.diagrams.net" version="24.0.0" type="device">
+  <diagram name="Modelo ER - AS-IS" id="er1">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="tt" value="Modelo Entidad-Relación — Estado Actual (AS-IS)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tt2" value="Directorio de extensiones telefónicas — Jefatura de Cultura de Innovación y Servicio" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="900" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lg1" value="Entidades de la NÓMINA" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E0;strokeColor=#E08000;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="30" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lg2" value="Entidades del DIRECTORIO" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="30" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="lg3" value="Sin correspondencia definida" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="62" width="370" height="26" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eNom" value="&lt;b&gt;REGISTRO_NOMINA&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;PK&amp;nbsp; id_empleado&amp;nbsp; &lt;i&gt;(texto)&lt;/i&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; apellidos_nombres&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; departamento&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; establecimiento&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; nombre_puesto_cargo&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; id_posicion&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; dedicacion&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; estado_hr&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; clasificacion_empleado&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; relacion_organizativa&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; codigo_directivo&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; correo_e&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; corte_mes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E0;strokeColor=#E08000;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="250" height="260" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eEmp" value="&lt;b&gt;EMPLEADO&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;PK&amp;nbsp; id_empleado&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; correo_institucional&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; apellidos_nombres&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#B85450&quot;&gt;El id_empleado existe solo&lt;br&gt;en la nómina, no en el directorio&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#6B7280;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="250" height="150" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eDir" value="&lt;b&gt;REGISTRO_DIRECTORIO&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; unidad&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; apellidos_nombres&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; cargo&lt;br&gt;FK&amp;nbsp; extension&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; correo&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; tematica&lt;br&gt;FK&amp;nbsp; estado&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#B85450&quot;&gt;Sin llave primaria declarada&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="790" y="150" width="250" height="185" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eEst" value="&lt;b&gt;ESTADO_REGISTRO&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;PK&amp;nbsp; valor&lt;br&gt;&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Vigente&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Pendiente por aprovisionar&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#B85450&quot;&gt;Estado sin transición de salida&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="150" width="250" height="140" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eTem" value="&lt;b&gt;TEMATICA&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; descripcion&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#6B7280&quot;&gt;Texto libre&lt;br&gt;no normalizado&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="330" width="250" height="110" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eExt" value="&lt;b&gt;EXTENSION&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;PK&amp;nbsp; numero&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; estado_aprovisionamiento&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#6B7280&quot;&gt;Gestionada en el PBX&lt;br&gt;Sin integración con el directorio&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#6B7280;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="790" y="420" width="250" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ePos" value="&lt;b&gt;POSICION&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;PK&amp;nbsp; id_posicion&lt;br&gt;FK&amp;nbsp; cargo&lt;br&gt;FK&amp;nbsp; unidad&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#6B7280&quot;&gt;Identifica la posición,&lt;br&gt;no a la persona&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E0;strokeColor=#E08000;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="420" y="420" width="250" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eCar" value="&lt;b&gt;CARGO&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;PK&amp;nbsp; nombre&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ¿requiere_extension?&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#B85450&quot;&gt;Sin catálogo: la regla es&lt;br&gt;conocimiento tácito de DH&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="460" width="250" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eUni" value="&lt;b&gt;UNIDAD&lt;/b&gt;&lt;hr size=&quot;1&quot;&gt;PK&amp;nbsp; nombre&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#B85450&quot;&gt;NO EXISTE CATÁLOGO MAESTRO&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;dashed=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="420" y="640" width="250" height="100" as="geometry" />
+        </mxCell>
+
+        <mxCell id="eDep" value="&lt;b&gt;DEPARTAMENTO&lt;/b&gt;&amp;nbsp;&lt;i&gt;(nómina)&lt;/i&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; nombre&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#6B7280&quot;&gt;Ej.: DIETAS&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E0;strokeColor=#E08000;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="640" width="250" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="eEsb" value="&lt;b&gt;ESTABLECIMIENTO&lt;/b&gt;&amp;nbsp;&lt;i&gt;(nómina)&lt;/i&gt;&lt;hr size=&quot;1&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; nombre&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#6B7280&quot;&gt;Ej.: DIRECCIÓN ALIMENTOS Y BEBIDAS&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF4E0;strokeColor=#E08000;align=left;spacingLeft=8;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="60" y="775" width="250" height="95" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r1" value="aparece en" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERone;endArrow=ERmany;strokeColor=#1F3864;fontSize=11;exitX=1;exitY=0.3;entryX=0;entryY=0.3;" edge="1" parent="1" source="eEmp" target="eNom">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r2" value="figura en" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERone;endArrow=ERzeroToOne;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="eEmp" target="eDir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3" value="posee" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERmany;endArrow=ERone;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="eDir" target="eEst">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r4" value="atiende" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERmany;endArrow=ERmany;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="eDir" target="eTem">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5" value="se publica en" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERone;endArrow=ERmany;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="eExt" target="eDir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6" value="tiene asignada" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERone;endArrow=ERzeroToOne;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="ePos" target="eExt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7" value="tipifica" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERone;endArrow=ERmany;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="eCar" target="ePos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8" value="contiene" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERone;endArrow=ERmany;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="eUni" target="ePos">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9" value="agrupa" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERone;endArrow=ERmany;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="eUni" target="eDir">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10" value="¿corresponde a?" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERmany;endArrow=ERzeroToOne;strokeColor=#B85450;dashed=1;strokeWidth=2;fontSize=11;fontColor=#B85450;" edge="1" parent="1" source="eDep" target="eUni">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r11" value="¿corresponde a?" style="edgeStyle=entityRelationEdgeStyle;html=1;rounded=0;startArrow=ERmany;endArrow=ERzeroToOne;strokeColor=#B85450;dashed=1;strokeWidth=2;fontSize=11;fontColor=#B85450;" edge="1" parent="1" source="eEsb" target="eUni">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="hall" value="&lt;b style=&quot;color:#B85450&quot;&gt;HALLAZGO CENTRAL — No existe llave común entre las dos fuentes&lt;/b&gt;&lt;br&gt;&lt;br&gt;El &lt;b&gt;id_empleado&lt;/b&gt; es la llave natural e inmutable, pero existe únicamente en la nómina: nunca fue incorporado al directorio.&lt;br&gt;La única correspondencia directa disponible hoy es el &lt;b&gt;correo institucional&lt;/b&gt;, atributo de estabilidad media.&lt;br&gt;&lt;br&gt;La combinación &lt;b&gt;cargo + unidad&lt;/b&gt; no identifica a una persona: su cardinalidad respecto de EMPLEADO es 1:N.&lt;br&gt;Ejemplo real del cliente: seis secretarias auxiliares en una misma facultad, con idéntico cargo e idéntica unidad.&lt;br&gt;&lt;br&gt;&lt;i&gt;Consecuencia: la conciliación deja de ser un cruce determinístico y se convierte en un emparejamiento aproximado,&lt;br&gt;con riesgo de asignar una extensión al titular equivocado. Esta es la causa raíz técnica de que el proceso sea manual.&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#E8B4B0;align=left;spacingLeft=14;spacingTop=6;verticalAlign=top;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="790" y="620" width="760" height="200" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cal" value="&lt;b&gt;Problemas de calidad del dato&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Q1&lt;/b&gt;&amp;nbsp; id_empleado como texto con ceros a la izquierda (00000349945) → las funciones de búsqueda fallan&lt;br&gt;&lt;b&gt;Q2&lt;/b&gt;&amp;nbsp; El archivo de nómina no admite cruce por BUSCARV&lt;br&gt;&lt;b&gt;Q3&lt;/b&gt;&amp;nbsp; Doble taxonomía organizacional sin tabla de correspondencia&lt;br&gt;&lt;b&gt;Q4&lt;/b&gt;&amp;nbsp; Columna unidad duplicada en el directorio «por temas de filtro»&lt;br&gt;&lt;b&gt;Q5&lt;/b&gt;&amp;nbsp; Sin restricciones de esquema: el archivo fue corrompido por transposición&lt;br&gt;&lt;b&gt;Q6&lt;/b&gt;&amp;nbsp; Sin trazabilidad de cambios&lt;br&gt;&lt;b&gt;Q7&lt;/b&gt;&amp;nbsp; Regla de derecho a extensión no documentada&lt;br&gt;&lt;b&gt;Q8&lt;/b&gt;&amp;nbsp; El directorio reside en OneDrive personal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F6FA;strokeColor=#C9CFDC;align=left;spacingLeft=14;spacingTop=6;verticalAlign=top;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="790" y="840" width="760" height="200" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
