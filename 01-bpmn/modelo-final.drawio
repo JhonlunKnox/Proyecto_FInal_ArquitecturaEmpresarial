@@ -1,0 +1,274 @@
+<mxfile host="app.diagrams.net" version="24.0.0" type="device">
+  <diagram name="P1 - Atención y transferencia" id="p1">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="t1" value="Proceso 1 — Atención y transferencia de llamadas telefónicas (AS-IS)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="900" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="t1b" value="Jefatura de Cultura de Innovación y Servicio — Universidad de La Sabana" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="900" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pool1" value="Atención telefónica" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="1560" height="520" as="geometry" />
+        </mxCell>
+
+        <mxCell id="laneA" value="Usuario final" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="pool1">
+          <mxGeometry x="30" y="0" width="1530" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="a_start" value="Realiza&#10;llamada" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=10;" vertex="1" parent="laneA">
+          <mxGeometry x="70" y="45" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="a_end1" value="Fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;strokeWidth=3;fontSize=10;" vertex="1" parent="laneA">
+          <mxGeometry x="1400" y="45" width="55" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="laneB" value="Gestora de servicio (×4)" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="pool1">
+          <mxGeometry x="30" y="140" width="1530" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" value="Contestar&#10;llamada" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="laneB">
+          <mxGeometry x="170" y="40" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" value="Identificar la necesidad&#10;del usuario" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="laneB">
+          <mxGeometry x="350" y="40" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" value="Consultar directorio&#10;de extensiones" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="laneB">
+          <mxGeometry x="530" y="40" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bg1" value="¿Encuentra&#10;la unidad?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="laneB">
+          <mxGeometry x="720" y="35" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="b4" value="Transferir llamada&#10;a la extensión" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="laneB">
+          <mxGeometry x="860" y="40" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="b5" value="Informar que no es&#10;posible direccionar" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="laneB">
+          <mxGeometry x="690" y="145" width="130" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="laneC" value="Unidad destino" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="pool1">
+          <mxGeometry x="30" y="370" width="1530" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="cg1" value="¿Contesta&#10;alguien?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="laneC">
+          <mxGeometry x="890" y="35" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="Atender solicitud" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="laneC">
+          <mxGeometry x="1030" y="40" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c_end" value="Fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;strokeWidth=3;fontSize=10;" vertex="1" parent="laneC">
+          <mxGeometry x="1240" y="42" width="55" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="a_start" target="b1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="b1" target="b2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="b2" target="b3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="b3" target="bg1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="Sí" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="bg1" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="bg1" target="b5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="b5" target="a_end1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="b4" target="cg1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="Sí" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;fontSize=11;" edge="1" parent="1" source="cg1" target="c1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="c1" target="c_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" value="No — nadie contesta" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#B85450;dashed=1;fontSize=11;fontColor=#B85450;" edge="1" parent="1" source="cg1" target="c_end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="965" y="620" />
+              <mxPoint x="1338" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="f1" value="&lt;b&gt;FALLA 1 — Transferencia incorrecta&lt;/b&gt;&lt;br&gt;El directorio está desactualizado: la llamada llega a la unidad equivocada." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#E8B4B0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="960" y="660" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" value="&lt;b&gt;FALLA 2 — Extensión sin responsable&lt;/b&gt;&lt;br&gt;La extensión existe pero no tiene titular activo: nadie contesta." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#E8B4B0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="660" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="f1l" style="html=1;dashed=1;strokeColor=#B85450;endArrow=none;" edge="1" parent="1" source="f1" target="b4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2l" style="html=1;dashed=1;strokeColor=#B85450;endArrow=none;" edge="1" parent="1" source="f2" target="cg1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="n1" value="Ninguna de las dos fallas se registra ni se mide: la unidad no tiene visibilidad de su frecuencia." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=2;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="40" y="760" width="900" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram name="P2 - Mantenimiento del directorio" id="p2">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="q1" value="Proceso 2 — Mantenimiento y actualización del directorio de extensiones (AS-IS)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=20;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+          <mxGeometry x="40" y="30" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q1b" value="Proceso objeto de intervención del proyecto" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="900" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pool2" value="Mantenimiento del directorio de extensiones" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="1760" height="700" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lDH" value="Desarrollo Humano" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="pool2">
+          <mxGeometry x="30" y="0" width="1730" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="dh_start" value="Cierre&#10;de mes" style="ellipse;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontSize=10;" vertex="1" parent="lDH">
+          <mxGeometry x="60" y="35" width="55" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="dh1" value="Publicar nómina&#10;del mes vencido" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lDH">
+          <mxGeometry x="160" y="32" width="130" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lJM" value="Profesional de Experiencia y Servicio" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="pool2">
+          <mxGeometry x="30" y="130" width="1730" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="jm1" value="Descargar archivo&#10;de nómina" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lJM">
+          <mxGeometry x="160" y="30" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jm2" value="Comparar manualmente&#10;registro por registro&#10;(≈ 6.400 filas)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;strokeWidth=2;fontSize=11;" vertex="1" parent="lJM">
+          <mxGeometry x="340" y="30" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jm3" value="Identificar novedades&#10;(5 a 10 por mes)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lJM">
+          <mxGeometry x="540" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jm4" value="Solicitar reunión&#10;con Tecnología" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;strokeWidth=2;fontSize=11;" vertex="1" parent="lJM">
+          <mxGeometry x="730" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jm5" value="Revisar novedades&#10;en reunión de 2 a 3 h" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lJM">
+          <mxGeometry x="920" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jm6" value="Marcar registro como&#10;PENDIENTE POR APROVISIONAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;strokeWidth=2;fontSize=10;" vertex="1" parent="lJM">
+          <mxGeometry x="1110" y="30" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jm7" value="Actualizar directorio&#10;compartido" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lJM">
+          <mxGeometry x="1320" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jmwait" value="Espera indefinida:&#10;no llega confirmación" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;dashed=1;fontSize=10;fontColor=#B85450;" vertex="1" parent="lJM">
+          <mxGeometry x="1110" y="145" width="160" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lTI" value="Dirección de Tecnología" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="pool2">
+          <mxGeometry x="30" y="370" width="1730" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="ti1" value="Recibir solicitud&#10;(verbal o Teams)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lTI">
+          <mxGeometry x="920" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ti2" value="Aprovisionar o&#10;liberar extensión" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lTI">
+          <mxGeometry x="1110" y="40" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ti3" value="Contactar al usuario&#10;y entregar la extensión" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lTI">
+          <mxGeometry x="1300" y="40" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ti_end" value="Fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;strokeWidth=3;fontSize=10;" vertex="1" parent="lTI">
+          <mxGeometry x="1520" y="42" width="55" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="lGS" value="Gestoras de servicio" style="swimlane;html=1;horizontal=0;startSize=30;fillColor=none;strokeColor=#1F3864;fontSize=12;" vertex="1" parent="pool2">
+          <mxGeometry x="30" y="520" width="1730" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="gs1" value="Consultar directorio&#10;(solo lectura)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDF2FB;strokeColor=#1F3864;fontSize=11;" vertex="1" parent="lGS">
+          <mxGeometry x="1320" y="30" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gsg" value="¿Registro&#10;pendiente?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontSize=10;" vertex="1" parent="lGS">
+          <mxGeometry x="1510" y="25" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="gs2" value="No transferir llamadas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#B85450;fontSize=11;" vertex="1" parent="lGS">
+          <mxGeometry x="1450" y="115" width="190" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="q_e1" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="dh_start" target="dh1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e2" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="dh1" target="jm1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e3" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="jm1" target="jm2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e4" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="jm2" target="jm3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e5" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="jm3" target="jm4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e6" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="jm4" target="jm5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e7" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="jm5" target="jm6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e8" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="jm6" target="jm7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e9" value="solicitud" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;dashed=1;fontSize=10;" edge="1" parent="1" source="jm5" target="ti1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e10" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="ti1" target="ti2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e11" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="ti2" target="ti3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e12" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="ti3" target="ti_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e13" value="CONFIRMACIÓN INEXISTENTE" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#B85450;dashed=1;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#B85450;" edge="1" parent="1" source="ti3" target="jmwait">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e14" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="jm7" target="gs1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e15" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#1F3864;" edge="1" parent="1" source="gs1" target="gsg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q_e16" value="Sí" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;strokeColor=#B85450;fontSize=11;" edge="1" parent="1" source="gsg" target="gs2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="qb1" value="&lt;b&gt;B1&lt;/b&gt;&amp;nbsp; La nómina no admite cruce automatizado&lt;br&gt;&lt;span style='color:#6B7280'&gt;Obliga a revisar 6.400 registros a mano&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#E8B4B0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="850" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qb2" value="&lt;b&gt;B2&lt;/b&gt;&amp;nbsp; Dependencia del agendamiento&lt;br&gt;&lt;span style='color:#6B7280'&gt;Esperas de hasta 3 semanas y cancelaciones&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#E8B4B0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="430" y="850" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3" value="&lt;b&gt;B3&lt;/b&gt;&amp;nbsp; Sin confirmación de retorno&lt;br&gt;&lt;span style='color:#6B7280'&gt;El estado «pendiente» no tiene transición de salida&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#E8B4B0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="820" y="850" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qb4" value="&lt;b&gt;B4&lt;/b&gt;&amp;nbsp; Frecuencia real bimensual o trimestral&lt;br&gt;&lt;span style='color:#6B7280'&gt;El directorio está desactualizado la mayor parte del tiempo&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FDF0EF;strokeColor=#E8B4B0;align=left;spacingLeft=10;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="850" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qnote" value="PUNTOS DE BLOQUEO" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;fontColor=#B85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="400" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
