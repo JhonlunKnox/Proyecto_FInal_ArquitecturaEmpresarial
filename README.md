@@ -31,7 +31,7 @@ El resultado es que el directorio se actualiza cada dos o tres meses en lugar de
 
 ## 🗺️ Cómo se implementa
 
-Ver el [Resumen Ejecutivo](ResumenEjecutivo.md) — ahí está el detalle de beneficios esperados, fases de implementación y tiempos, en un solo documento pensado para el negocio, no para el equipo técnico.
+Ver el [Resumen Ejecutivo](resumen-ejecutivo.md) — ahí está el detalle de beneficios esperados, fases de implementación y tiempos, en un solo documento pensado para el negocio, no para el equipo técnico.
 
 ---
 
